@@ -1,22 +1,18 @@
-# FizzBuzz
+# Bowling Game
 
-### Step 1
-Write a program that returns array of numbers from 1 to 100, while multiples of three return "Fizz" instead of the number, multiples of five return "Buzz". Multiples of both three and five return "FizzBuzz".
+This kata demonstrates the power of doing tests first, and how up-front design decisions can change
+and give way to a simpler implementation by coding iteratively.
 
-### Step 2
-Add a way to change range, instead of printing numbers from 1 to 100. Examples: numbers from 1 to 20, from 15 to 50.
+Write a `BowlingGame` object with methods `roll(pins)` and `getScore()`.
 
-### Step 3
-Add rules for 7 and 11: 7 returns "Foo", 11 returns "Boo" and multiples of both return "FooBoo".
+This will be the game engine which follows the rules of bowling:
 
-### Step 4
-Add new rule for numbers smaller than 16 which return "Small" and a rule for numbers bigger than 95 which return "Big".
-
-### Step 5
-Add ability to change rules for initial requirement, instead of "Fizz" (multiples of 3) return "Buzz", and instead of "Buzz" (multiples of 5) return "Fizz"
-
-### Step 6
-Add new rule for "multiples of 3 and 5" return "FTW", and for "multiples of 3 or 5" return "GG"
+* The game consists of 10 frames, in each frame the player has the ability to knock down 10 pins.
+* The score for the frame is the total number of pins knocked down + bonuses for `strikes` and `spares`.
+* A `spare` is when the player knocks down all 10 pins in 2 tries. The bonus for a spare is the next roll.
+* A `strike` is when the player knocks down all 10 pins in 1 try. The bonus is the next 2 rolls.
+* In the tenth frame a player who rolls a spare / strike gets an extra roll(s) to complete the frame.
+* No more than 3 rolls can be rolled in the 10th frame.
 
 
 ## Rules and Usage
