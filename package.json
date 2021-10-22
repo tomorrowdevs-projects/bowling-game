@@ -4,7 +4,7 @@
   "description": "kata for learn tests",
   "main": "/js/index.js",
   "scripts": {
-    "test": "jest --coverage --watch",
+    "test": "jest --coverage --watchAll",
     "start": "webpack serve --open",
     "build": "webpack"
   },
