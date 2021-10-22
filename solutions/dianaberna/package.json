@@ -1,0 +1,42 @@
+{
+  "name": "bowling-game",
+  "version": "1.0.0",
+  "description": "kata for learn tests",
+  "main": "/js/index.js",
+  "scripts": {
+    "test": "jest --coverage --watchAll",
+    "start": "webpack serve --open",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dianaberna/bowling-game.git"
+  },
+  "keywords": [
+    "tdd",
+    "jest",
+    "tests",
+    "js",
+    "javascript",
+    "integration",
+    "testing",
+    "webpack"
+  ],
+  "author": "Diana Bernabei",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dianaberna/bowling-game/issues"
+  },
+  "homepage": "https://github.com/dianaberna/bowling-game#readme",
+  "dependencies": {
+    "babel-jest": "^27.2.5",
+    "jest": "^27.2.5",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^5.3.2",
+    "webpack": "^5.58.2",
+    "webpack-cli": "^4.9.0",
+    "webpack-dev-server": "^4.3.1"
+  }
+}
